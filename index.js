@@ -23,6 +23,10 @@ app.post('/submit',(req, res) => {
 
 app.use((req, res, next) => {
     console.log(`${req.methid} ${req.url}`);
+});
+
+app.use((req, res, next) => {
+    console.log(`${req.methid} ${req.url}`);
     next();
 });
 
